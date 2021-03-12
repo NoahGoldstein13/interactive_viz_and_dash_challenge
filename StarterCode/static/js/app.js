@@ -16,7 +16,6 @@ function init() {
     var metadata = json_data.metadata.filter(element => element.id == input)[0];
     var samples = json_data.samples.filter(element => element.id == input)[0];
 
-    console.log(metadata)
     var panelData = d3.select("#sample-metadata");
     panelData.html("");
     Object.entries(metadata).forEach(([key, value]) => {
@@ -66,7 +65,6 @@ function optionChanged(input) {
     var metadata = json_data.metadata.filter(element => element.id == input)[0]
     var samples = json_data.samples.filter(element => element.id == input)[0]
 
-    console.log(metadata)
     var panelData = d3.select("#sample-metadata");
     panelData.html("");
     Object.entries(metadata).forEach(([key, value]) => {
